@@ -23,7 +23,7 @@ const Contact = () => {
           </div>
            </div>
            
-           <div className='space-y-4'>
+           <div className='space-y-4 m'>
             <div className='flex flex-col gap-1'>
               <label htmlFor="name">Name</label>
               <input type="text"
