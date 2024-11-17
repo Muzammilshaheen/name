@@ -3,8 +3,8 @@ import { FaCode, FaLaptopCode, FaBookOpen, FaGithub, FaLinkedin } from "react-ic
 
 const About = () => {
   return (
-    <div id="about" className="container pt-32">
-      <h2 className="text-4xl md:text-5xl font-bold text-indigo-500">About Me</h2>
+    <div id="about" className="container pt-32 mb-10">
+      <h2 className="text-4xl md:text-5xl font-bold text-indigo-500 text-center mb-10">About Me</h2>
       <div className="text-gray-500 pt-4 text-lg leading-relaxed">
         <p>
           Hi there! I’m <span className="font-semibold text-indigo-500">Muzammil Shaheen</span>, a 
