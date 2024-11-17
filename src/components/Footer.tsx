@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto text-center">
         <h2 className="text-xl font-bold text-indigo-500 mb-4">Connect with Me</h2>
         <p className="mb-6 text-gray-400">
-          Feel free to reach out via email, WhatsApp, or connect on social platforms!
+          Feel free to reeach out via email, WhatsApp, or connect on social platforms!
         </p>
 
         <div className="flex justify-center space-x-6 text-2xl">
