@@ -17,7 +17,7 @@ const Navbar = () => {
           <li className='menuLink'><a href="#about">About</a></li>
           <li className='menuLink'><a href="#projects">Projects</a></li>
           <li className='menuLink'><a href="#skill">Skills</a></li>
-          <li className='menuLink'><a href="#content"></a>Content</li>
+          <li className='menuLink'><a href="#contact">Contact</a></li>
          </ul>
 
          <LuMenu className='md:hidden' size={30} />
