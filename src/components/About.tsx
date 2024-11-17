@@ -1,69 +1,60 @@
-import React from 'react';
-import { FaLinkedin, FaGithub, FaTwitter, FaFacebook } from "react-icons/fa";
+import React from "react";
+import { FaCode, FaLaptopCode, FaBookOpen, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const About = () => {
   return (
     <div id="about" className="container pt-32">
       <h2 className="text-4xl md:text-5xl font-bold text-indigo-500">About Me</h2>
-      <p className="text-gray-500 pt-4 leading-relaxed text-lg">
-        Hello! I'm <span className="text-white font-bold">Muzammil Shaheen</span>, a passionate developer and lifelong learner with a strong interest in building 
-        innovative solutions to real-world problems. With a background in <span className="text-indigo-400 font-bold">Next.js</span>, I thrive 
-        on challenges and continually seek opportunities to improve and expand my skill set. When I'm not coding, 
-        you can find me exploring new technologies, contributing to open-source projects, or enjoying a good book. 
-        Let's connect and create something amazing together!
-      </p>
+      <div className="text-gray-500 pt-4 text-lg leading-relaxed">
+        <p>
+          Hi there! I’m <span className="font-semibold text-indigo-500">Muzammil Shaheen</span>, a 
+          passionate <span className="font-semibold">Full-Stack Developer</span> and tech enthusiast dedicated to crafting 
+          innovative solutions for real-world challenges. With expertise in modern frameworks like
+          <span className="font-semibold">Next.js</span>, I specialize in creating seamless, high-performance web 
+          applications.
+        </p>
+        <p className="mt-4">
+          My journey as a developer is fueled by curiosity and a commitment to lifelong learning. Whether it's exploring 
+          the latest technologies, contributing to open-source communities, or tackling new challenges, I thrive on 
+          opportunities that allow me to grow and make a meaningful impact.
+        </p>
+        <p className="mt-4">
+          When Im not coding, youll find me immersed in a good book, delving into design trends, or experimenting with 
+          exciting side projects. Let collaborate and bring ideas to life together!
+        </p>
+      </div>
 
-      
-      <ul className="mt-8 space-y-2 text-lg">
-        <li className="flex items-center gap-2">
-          ✅ <span>Building dynamic web applications with Next.js</span>
-        </li>
-        <li className="flex items-center gap-2">
-          ✅ <span>Experience with React.js and Tailwind CSS</span>
-        </li>
-        <li className="flex items-center gap-2">
-          ✅ <span>Contributing to open-source projects</span>
-        </li>
-        <li className="flex items-center gap-2">
-          ✅ <span>Exploring the latest trends in web development</span>
-        </li>
-      </ul>
+      <div className="mt-8">
+        <h3 className="text-2xl font-bold text-indigo-500 mb-4">What I Do</h3>
+        <ul className="space-y-4">
+          <li className="flex items-center">
+            <FaCode className="text-indigo-500 text-xl mr-4" />
+            <span>Build responsive and scalable web applications using modern frameworks.</span>
+          </li>
+          <li className="flex items-center">
+            <FaLaptopCode className="text-indigo-500 text-xl mr-4" />
+            <span>Optimize performance and deliver seamless user experiences.</span>
+          </li>
+          <li className="flex items-center">
+            <FaBookOpen className="text-indigo-500 text-xl mr-4" />
+            <span>Stay up-to-date with emerging technologies and best practices.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div className="mt-8">
+        <h3 className="text-2xl font-bold text-indigo-500 mb-4">Connect with Me</h3>
+        <div className="flex space-x-6 text-2xl">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-indigo-500">
+            <FaGithub />
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-indigo-500">
+            <FaLinkedin />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
 
-// Footer //
-const Footer = () => {
-  return (
-    <footer className="bg-black text-gray-400 py-6 mt-16">
-      <div className="container flex flex-col items-center">
-        <p className="text-lg">© 2024 Muzammil Shaheen. All rights reserved.</p>
-        <div className="flex gap-4 mt-4">
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-500">
-            <FaLinkedin size={25} />
-          </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-500">
-            <FaGithub size={25} />
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-500">
-            <FaTwitter size={25} />
-          </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-500">
-            <FaFacebook size={25} />
-          </a>
-        </div>
-      </div>
-    </footer>
-  );
-};
-
-const App = () => {
-  return (
-    <>
-      <About />
-      <Footer />
-    </>
-  );
-};
-
-export default App;
+export default About;
