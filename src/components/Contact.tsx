@@ -1,6 +1,12 @@
 import React from 'react'
 import { LuMail } from "react-icons/lu";
 import { FiPhone } from "react-icons/fi";
+import { IoLogoWhatsapp } from "react-icons/io5";
+import { AiOutlineSkype } from "react-icons/ai";
+import { FaFacebookMessenger } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+
+
 
 
 const Contact = () => {
@@ -21,23 +27,35 @@ const Contact = () => {
           <div className='flex gap-3 items-center'>
             <FiPhone size={30} /> 92-303-310-5085
           </div>
+          <div className='flex gap-3 items-center'>
+            < IoLogoWhatsapp size={30} /> 92-303-310-5085
+          </div>
+          <div className='flex gap-3 items-center'>
+            <FaFacebookMessenger size={30} /> muzammilshaheem77@gmail.com
+          </div>
+          <div className='flex gap-3 items-center'>
+            <AiOutlineSkype size={30} /> muzammilshaheem77@gmail.com
+          </div>
+          <div className='flex gap-3 items-center'>
+            <FaFacebook size={30} /> muzammilshaheem77@gmail.com
+          </div>
            </div>
            
            <div className='space-y-4 m'>
             <div className='flex flex-col gap-1'>
               <label htmlFor="name">Name</label>
               <input type="text"
-              className='h-[40px] bg-transparent border border-accent' id="name" />
+              className='h-[40px] bg-transparent border border-white' id="name" />
             </div>
             <div className='flex flex-col gap-1'>
               <label htmlFor="email">Email</label>
               <input type="text"
-              className='h-[40px] bg-transparent border border-accent' id="email" />
+              className='h-[40px] bg-transparent border border-white' id="email" />
             </div>
             <div className='flex flex-col gap-1'>
               <label htmlFor="msg">Massage</label>
               <textarea
-              className='bg-transparent border border-accent' id="msg" rows={8}>
+              className='bg-transparent border border-white' id="msg" rows={8}>
               </textarea>
             </div>
 
