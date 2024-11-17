@@ -12,7 +12,7 @@ const Navbar = () => {
           <div className='text-red-900 text-sm'>Muzammil Shaheen</div>
         </div>
 
-         <ul className='gap-10 lg:gap-16 md:flex'>
+         <ul className='gap-10 lg:gap-16 md:flex text-2xl inline-block mr-10'>
           <li className='menuLink'><a href="#hero">Home</a></li>
           <li className='menuLink'><a href="#about">About</a></li>
           <li className='menuLink'><a href="#projects">Projects</a></li>
