@@ -7,7 +7,7 @@ const About = () => {
       <h2 className="text-4xl md:text-5xl font-bold text-indigo-500 text-center mb-10">About Me</h2>
       <div className="text-gray-500 pt-4 text-lg leading-relaxed">
         <p>
-          Hi there! I’m <span className="font-semibold text-indigo-500">Muzammil Shaheen</span>, a 
+          Hi there! Im <span className="font-semibold text-indigo-500">Muzammil Shaheen</span>, a 
           passionate <span className="font-semibold">Full-Stack Developer</span> and tech enthusiast dedicated to crafting 
           innovative solutions for real-world challenges. With expertise in modern frameworks like
           <span className="font-semibold">Next.js</span>, I specialize in creating seamless, high-performance web 
