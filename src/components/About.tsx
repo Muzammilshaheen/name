@@ -7,20 +7,20 @@ const About = () => {
       <h2 className="text-4xl md:text-5xl font-bold text-indigo-500 text-center mb-10">About Me</h2>
       <div className="text-gray-500 pt-4 text-lg leading-relaxed">
         <p>
-          Hi there! Im <span className="font-semibold text-indigo-500">Muzammil Shaheen</span>, a 
+          Hi there! I&apos;m <span className="font-semibold text-indigo-500">Muzammil Shaheen</span>, a 
           passionate <span className="font-semibold">Full-Stack Developer</span> and tech enthusiast dedicated to crafting 
           innovative solutions for real-world challenges. With expertise in modern frameworks like
           <span className="font-semibold">Next.js</span>, I specialize in creating seamless, high-performance web 
           applications.
         </p>
         <p className="mt-4">
-          My journey as a developer is fueled by curiosity and a commitment to lifelong learning. Whether it's exploring 
+          My journey as a developer is fueled by curiosity and a commitment to lifelong learning. Whether it&apos;s exploring 
           the latest technologies, contributing to open-source communities, or tackling new challenges, I thrive on 
           opportunities that allow me to grow and make a meaningful impact.
         </p>
         <p className="mt-4">
-          When Im not coding, youll find me immersed in a good book, delving into design trends, or experimenting with 
-          exciting side projects. Let collaborate and bring ideas to life together!
+          When I&apos;m not coding, you&apos;ll find me immersed in a good book, delving into design trends, or experimenting with 
+          exciting side projects. Let&apos;s collaborate and bring ideas to life together!
         </p>
       </div>
 
