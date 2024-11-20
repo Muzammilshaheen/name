@@ -10,10 +10,24 @@
 }
 
 @layer components {
+    /* Styling for menu links */
     .menuLink {
         @apply cursor-pointer hover:text-[#ed5454];
     }
 
+    /* Mobile menu styles */
+    .mobile-menu {
+        @apply hidden flex-col items-center bg-black text-white p-4 rounded-lg shadow-lg;
+    }
+
+    /* Mobile menu toggle: visible for small screens only */
+    @media (max-width: 768px) {
+        .mobile-menu {
+            @apply flex; /* Make it visible on mobile */
+        }
+    }
+
+    /* Tag styles */
     .tags {
         margin-right: 0.5rem;
         margin-top: 0.5rem;
@@ -30,12 +44,15 @@
     .tags:nth-child(1) {
         background-color: rgb(243, 124, 225);
     }
+
     .tags:nth-child(2) {
         background-color: rgb(87, 165, 42);
     }
+
     .tags:nth-child(3) {
         background-color: rgb(42, 56, 165);
     }
+
     .tags:nth-child(4) {
         background-color: rgb(220, 108, 194);
     }
