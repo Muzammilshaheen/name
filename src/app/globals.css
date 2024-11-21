@@ -6,28 +6,39 @@
     body {
         color: white;
         background-color: black;
+        font-family: 'Arial', sans-serif;
     }
 }
 
 @layer components {
-    /* Styling for menu links */
+    
     .menuLink {
         @apply cursor-pointer hover:text-[#ed5454];
     }
 
-    /* Mobile menu styles */
+    
     .mobile-menu {
-        @apply hidden flex-col items-center bg-black text-white p-4 rounded-lg shadow-lg;
+        @apply hidden flex-col items-center bg-black bg-opacity-90 text-white p-4 rounded-lg shadow-lg absolute top-0 right-0 w-full transition-all ease-in-out duration-300;
     }
 
-    /* Mobile menu toggle: visible for small screens only */
+    
     @media (max-width: 768px) {
         .mobile-menu {
-            @apply flex; /* Make it visible on mobile */
+            @apply block; 
         }
     }
 
-    /* Tag styles */
+
+    .navbar {
+        @apply bg-black bg-opacity-80 p-11 rounded-lg shadow-lg;
+    }
+
+
+    .mobile-icon {
+        @apply text-white hover:text-[#ed5454] transition duration-300;
+    }
+
+
     .tags {
         margin-right: 0.5rem;
         margin-top: 0.5rem;
