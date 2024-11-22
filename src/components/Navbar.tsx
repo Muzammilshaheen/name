@@ -25,7 +25,7 @@ const Navbar = () => {
             className="inline rounded-full"
             priority
           />
-          <div data-aos="zoom-in" className="text-red-900 text-sm ml-2 -scroll">Muzammil Shaheen</div>
+          <div data-aos="zoom-in" className="text-white text-sm ml-2 -scroll">Muzammil Shaheen</div>
         </div>
 
       

@@ -12,7 +12,7 @@ const Contact = () => {
       id="contact" 
       className='pt-32 container mb-10' 
       style={{
-        backgroundImage: `url('/c.webp')`, 
+        backgroundImage: `url('/cc.jpeg')`, 
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
