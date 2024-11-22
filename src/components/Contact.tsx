@@ -8,38 +8,46 @@ import { FaFacebook } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div id="contact" className='pt-32 container mb-10'>
+    <div 
+      id="contact" 
+      className='pt-32 container mb-10' 
+      style={{
+        backgroundImage: `url('/c.webp')`, 
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       <h1 className="text-center font-bold text-6xl text-indigo-500 mb-16">Contact</h1>
 
       <div className='grid md:grid-cols-2 gap-10'>
         
         <div className='space-y-2'>
-           <h2 className='text-blue-300 text-5xl'>Get in touch</h2>
-           <p className="text-gray-400 text-lg leading-relaxed mt-7">
+          <h2 className='text-blue-300 text-5xl'>Get in touch</h2>
+          <p className="text-gray-400 text-lg leading-relaxed mt-7">
             The application of scientific knowledge for practical purposes, especially in industry.
             Advances in computer technology have transformed the industry and continue to provide
             innovative solutions. Engineering and applied sciences drive progress across various
             domains.
           </p>
           
-          
           <div className='flex gap-3 items-center hover:text-indigo-500'>
-            <LuMail  className='bg-red-800' size={30} /> muzammilshaheem77@gmail.com
+            <LuMail size={30} /> muzammilshaheem77@gmail.com
           </div>
           <div className='flex gap-3 items-center hover:text-indigo-500'>
-            <FiPhone  className='bg-red-800' size={30} /> 92-303-310-5085
+            <FiPhone size={30} /> 92-303-310-5085
           </div>
           <div className='flex gap-3 items-center hover:text-indigo-500'>
-            <IoLogoWhatsapp  className='bg-red-800'  size={30} /> 92-303-310-5085
+            <IoLogoWhatsapp size={30} /> 92-303-310-5085
           </div>
           <div className='flex gap-3 items-center hover:text-indigo-500'>
-            <FaFacebookMessenger  className='bg-red-800' size={30} /> muzammilshaheem77@gmail.com
+            <FaFacebookMessenger size={30} /> muzammilshaheem77@gmail.com
           </div>
           <div className='flex gap-3 items-center hover:text-indigo-500'>
-            <AiOutlineSkype className='bg-red-800' size={30} /> muzammilshaheem77@gmail.com
+            <AiOutlineSkype size={30} /> muzammilshaheem77@gmail.com
           </div>
           <div className='flex gap-3 items-center hover:text-indigo-500'>
-            <FaFacebook  className='bg-red-800' size={30} /> muzammilshaheem77@gmail.com
+            <FaFacebook size={30} /> muzammilshaheem77@gmail.com
           </div>
         </div>
         
@@ -71,9 +79,8 @@ const Contact = () => {
               </textarea>
           </div>
           <button className='w-24 h-10 bg-slate-500 border border-white rounded-md hover:bg-indigo-500 hover:text-white focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 focus:outline-none'>
-  Send me
-</button>
-
+            Send me
+          </button>
         </div>
       </div>
     </div>
