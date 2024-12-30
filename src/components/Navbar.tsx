@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen((prev) => !prev);
   };
 
   const closeMenu = () => {
@@ -15,8 +15,10 @@ const Navbar = () => {
 
   return (
     <div className="container pt-8 px-4">
-      <div className="flex justify-between items-center p-4 rounded-lg shadow-lg">
-        <div data-aos="zoom-in-down" className="text-xl font-medium flex items-center">
+      
+      <div className="flex justify-between items-center p-4 rounded-lg shadow-lg text-white">
+        
+        <div className="text-xl font-medium flex items-center">
           <Image
             src="/ms.png"
             alt="Logo"
@@ -25,37 +27,36 @@ const Navbar = () => {
             className="inline rounded-full"
             priority
           />
-          <div data-aos="zoom-in" className="text-white text-sm ml-2 -scroll">Muzammil Shaheen</div>
+          <div className="text-white text-sm ml-2">Muzammil Shaheen</div>
         </div>
 
-      
-        <ul className="gap-10 lg:gap-16 md:flex text-2xl mr-10 hidden">
-          <li className="menuLink"><a href="#hero">Home</a></li>
-          <li className="menuLink"><a href="#about">About</a></li>
-          <li className="menuLink"><a href="#projects">Projects</a></li>
-          <li className="menuLink"><a href="#skill">Skills</a></li>
-          <li className="menuLink"><a href="#contact">Contact</a></li>
+        
+        <ul className="hidden md:flex gap-8 lg:gap-12 text-lg text-white">
+          <li className="hover:text-red-500"><a href="#hero">Home</a></li>
+          <li className="hover:text-red-500"><a href="#about">About</a></li>
+          <li className="hover:text-red-500"><a href="#projects">Projects</a></li>
+          <li className="hover:text-red-500"><a href="#skill">Skills</a></li>
+          <li className="hover:text-red-500"><a href="#contact">Contact</a></li>
         </ul>
 
-      
+        {/* Mobile Menu Icon */}
         <LuMenu
-          className="md:hidden cursor-pointer text-white hover:text-[#ed5454]"
+          className="md:hidden cursor-pointer text-white hover:text-red-500"
           size={30}
           onClick={toggleMenu}
         />
-
-      
-        <ul
-  className={`mobile-menu ${isMobileMenuOpen ? "block" : "hidden"} md:hidden flex-col items-right bg-black bg-opacity-90 text-white p-4 shadow-lg absolute top-10 left-96 w-full transition-all ease-in-out duration-300 gap-5 px-4 m-4`}
-
-        >
-          <li className="menuLink"><a href="#hero" onClick={closeMenu}>Home</a></li>
-          <li className="menuLink"><a href="#about" onClick={closeMenu}>About</a></li>
-          <li className="menuLink"><a href="#projects" onClick={closeMenu}>Projects</a></li>
-          <li className="menuLink"><a href="#skill" onClick={closeMenu}>Skills</a></li>
-          <li className="menuLink"><a href="#contact" onClick={closeMenu}>Contact</a></li>
-        </ul>
       </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <ul className="flex flex-col items-center bg-slate-400 text-white p-4 rounded-lg shadow-lg absolute top-20 left-0 w-full">
+          <li className="py-2 hover:text-red-500"><a href="#hero" onClick={closeMenu}>Home</a></li>
+          <li className="py-2 hover:text-red-500"><a href="#about" onClick={closeMenu}>About</a></li>
+          <li className="py-2 hover:text-red-500"><a href="#projects" onClick={closeMenu}>Projects</a></li>
+          <li className="py-2 hover:text-red-500"><a href="#skill" onClick={closeMenu}>Skills</a></li>
+          <li className="py-2 hover:text-red-500"><a href="#contact" onClick={closeMenu}>Contact</a></li>
+        </ul>
+      )}
     </div>
   );
 };
