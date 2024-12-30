@@ -21,7 +21,7 @@ const Hero = () => {
         </div>
 
         
-        <div className="flex flex-col justify-center items-center text-center lg:text-left space-y-6 mt-10">
+        <div className="flex flex-col justify-center items-center text-center lg:text-left space-y-6 mt-20">
           <div className="text-[40px] sm:text-[60px] md:text-[80px] font-bold leading-tight">
             <p data-aos="zoom-in-down" className="text-red-500 italic text-[20px] sm:text-[30px] md:text-[40px]">
               I&apos;m
@@ -50,7 +50,7 @@ const Hero = () => {
           
           <button
             data-aos="zoom-in"
-            className="px-4 py-2 bg-purple-600 text-white text-sm rounded-lg hover:bg-purple-700 shadow-lg transition-all mb-20 ml-5"
+            className="px-4 py-2 bg-purple-600 text-white text-sm rounded-lg hover:bg-purple-700 shadow-lg transition-all mb-40 ml-5"
           >
             Learn More
           </button>

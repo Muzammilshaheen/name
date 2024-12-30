@@ -5,30 +5,30 @@ import Heading from './Heading';
 const data = [
     {
       id: 0,
-      title: "Todo List",
+      title: "HTML",
       desc: "2-Sept-2022 — My PhD t and their role in cognition. On my panel are Kim Sterelny, Daniel Stoljar, Anna Wierzbicka and",
-      img: "/2.jpg",
+      img: "/html.webp",
       tage: ["React", "Node", "CSS", "Typescript"],
     },
     {
       id: 1,
-      title: "Weather App",
+      title: "CSS",
       desc: "A real-time weather app fetching data from an external API to provide current weather updates for any location.",
-      img: "/2.jpg",
+      img: "/css.webp",
       tage: ["JavaScript", "React", "API", "CSS"],
     },
     {
       id: 2,
-      title: "Portfolio Website",
+      title: "React",
       desc: "A personal portfolio website showcasing projects, skills, and contact information with a sleek, responsive design.",
-      img: "/3.jpg",
+      img: "/rc.jpeg",
       tage: ["HTML", "CSS", "JavaScript", "React"],
     },
     {
       id: 3,
       title: "E-commerce Platform",
       desc: "A full-stack e-commerce platform with product listings, user authentication, and a shopping cart feature.",
-      img: "/4.jpg",
+      img: "/c.webp",
       tage: ["Node.js", "Express", "MongoDB", "React"],
     },
     {
@@ -40,10 +40,10 @@ const data = [
     },
     {
       id: 5,
-      title: "Chat Application",
+      title: "JavaScript",
       desc: "A real-time chat application with WebSocket implementation for seamless communication between users.",
-      img: "/6.jpg",
-      tage: ["Socket.IO", "Node.js", "React", "CSS"],
+      img: "/jv.jpeg",
+      tage: ["JavaScript", "Node.js", "React", "CSS"],
     },
   ];
   
