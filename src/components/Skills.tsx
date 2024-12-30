@@ -17,10 +17,11 @@ const Skills = () => {
   Technology I Work With
 </h2>
           <p className="text-gray-400 text-lg leading-relaxed mt-7">
-            The application of scientific knowledge for practical purposes, especially in industry.
-            Advances in computer technology have transformed the industry and continue to provide
-            innovative solutions. Engineering and applied sciences drive progress across various
-            domains.
+          The application of scientific knowledge for practical purposes, especially in industry, has 
+      revolutionized modern life. Advances in computer technology have transformed the industry and 
+      continue to provide innovative solutions. Engineering and applied sciences drive progress 
+      across various domains, from healthcare to space exploration, creating endless possibilities 
+      for the future.
           </p>
         </div>
 

@@ -1,55 +1,95 @@
 import React from "react";
-import { FaCode, FaLaptopCode, FaBookOpen, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaCode,
+  FaLaptopCode,
+  FaBookOpen,
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaTwitter,
+} from "react-icons/fa";
 
 const About = () => {
   return (
-    <div id="about" className="container pt-32 mb-10">
-      <h2 className="text-4xl md:text-5xl font-bold text-indigo-500 text-center mb-10">About Me</h2>
-      <div className="text-gray-500 pt-4 text-lg leading-relaxed">
+    <div id="about" className="container mx-auto px-4 pt-32 mb-10">
+      <h2 className="text-4xl md:text-5xl font-bold text-indigo-500 text-center mb-10">
+        About Me
+      </h2>
+      <div className="text-gray-500 text-lg leading-relaxed text-center max-w-4xl mx-auto">
         <p>
-          Hi there! I&apos;m <span className="font-semibold text-indigo-500">Muzammil Shaheen</span>, a 
-          passionate <span className="font-semibold">Full-Stack Developer</span> and tech enthusiast dedicated to crafting 
-          innovative solutions for real-world challenges. With expertise in modern frameworks like
-          <span className="font-semibold">Next.js</span>, I specialize in creating seamless, high-performance web 
-          applications.
+          Hi there! I&apos;m{" "}
+          <span className="font-semibold text-indigo-500">Muzammil Shaheen</span>
+          , an independent Full-Stack Web Developer and AI Generative Expert
+          based in Rahim Yar Khan, Pakistan.
         </p>
         <p className="mt-4">
-          My journey as a developer is fueled by curiosity and a commitment to lifelong learning. Whether it&apos;s exploring 
-          the latest technologies, contributing to open-source communities, or tackling new challenges, I thrive on 
-          opportunities that allow me to grow and make a meaningful impact.
+          Passionate about crafting intuitive and sleek websites, I specialize
+          in building impactful digital experiences for startups and small
+          businesses. My expertise spans both frontend and backend development,
+          enabling me to create seamless, visually appealing, and
+          user-friendly applications.
         </p>
         <p className="mt-4">
-          When I&apos;m not coding, you&apos;ll find me immersed in a good book, delving into design trends, or experimenting with 
-          exciting side projects. Let&apos;s collaborate and bring ideas to life together!
+          Leveraging AI generative tools, I bring innovation and efficiency to
+          every project. Let&apos;s collaborate to elevate your digital
+          presence and bring your vision to life!
         </p>
       </div>
 
-      <div className="mt-8">
-        <h3 className="text-2xl font-bold text-indigo-500 mb-4">What I Do</h3>
-        <ul className="space-y-4">
+      <div className="mt-12">
+        <h3 className="text-2xl font-bold text-indigo-500 mb-6 text-center">
+          What I Do
+        </h3>
+        <ul className="space-y-6 max-w-3xl mx-auto">
           <li className="flex items-center">
-            <FaCode className="text-indigo-500 text-xl mr-4" />
+            <FaCode className="text-indigo-500 text-2xl mr-4" />
             <span>Build responsive and scalable web applications using modern frameworks.</span>
           </li>
           <li className="flex items-center">
-            <FaLaptopCode className="text-indigo-500 text-xl mr-4" />
+            <FaLaptopCode className="text-indigo-500 text-2xl mr-4" />
             <span>Optimize performance and deliver seamless user experiences.</span>
           </li>
           <li className="flex items-center">
-            <FaBookOpen className="text-indigo-500 text-xl mr-4" />
+            <FaBookOpen className="text-indigo-500 text-2xl mr-4" />
             <span>Stay up-to-date with emerging technologies and best practices.</span>
           </li>
         </ul>
       </div>
 
-      <div className="mt-8">
-        <h3 className="text-2xl font-bold text-indigo-500 mb-4">Connect with Me</h3>
-        <div className="flex space-x-6 text-2xl">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-indigo-500">
+      <div className="mt-12">
+        <h3 className="text-2xl font-bold text-indigo-500 mb-6 text-center">
+          Connect with Me
+        </h3>
+        <div className="flex justify-center space-x-8 text-2xl">
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-indigo-500 transition-colors"
+          >
             <FaGithub />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-indigo-500">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-indigo-500 transition-colors"
+          >
             <FaLinkedin />
+          </a>
+          <a
+            href="mailto:example@example.com"
+            className="text-gray-500 hover:text-indigo-500 transition-colors"
+          >
+            <FaEnvelope />
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-indigo-500 transition-colors"
+          >
+            <FaTwitter />
           </a>
         </div>
       </div>
