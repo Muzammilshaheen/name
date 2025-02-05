@@ -20,10 +20,10 @@ const Navbar = () => {
         
         <div className="text-xl font-medium flex items-center">
           <Image
-            src="/ms.png"
+            src="/pi.jpg"
             alt="Logo"
-            width={112}
-            height={80}
+            width={22}
+            height={40}
             className="inline rounded-full"
             priority
           />

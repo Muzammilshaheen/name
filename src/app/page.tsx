@@ -24,10 +24,11 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <About />
       <Projects />
       <Skills />
       <Contact />
-      <About />
+
     </main>
   );
 }
