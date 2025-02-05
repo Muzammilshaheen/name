@@ -13,13 +13,13 @@ const About = () => {
   return (
     <div
       id="about"
-      className="container mx-auto px-4 pt-0 mb-10 bg-[url('/rc.jpeg')] bg-cover bg-no-repeat"
+      className="container mx-auto px-4 pt-0 mb-10 bg-[url('/about..jpg')] bg-cover bg-no-repeat"
     >
       <div className=" bg-opacity-80 p-10 rounded-lg shadow-lg">
         <h2 className="text-4xl md:text-5xl font-bold text-indigo-500 text-center mb-10">
           About Me
         </h2>
-        <div className="text-gray-700 text-lg leading-relaxed text-center max-w-4xl mx-auto">
+        <div className="text-white text-lg leading-relaxed text-center max-w-4xl mx-auto">
           <p>
             Hi there! I&apos;m{" "}
             <span className="font-semibold text-indigo-500">
